@@ -2,6 +2,9 @@
 
 Simple frontend with auth and ssl to allow you to host your own docker reg
 
+You will need two directories, one for the ssl key+crt and one for the .htpasswd
+
+The nginx conf will look for `ssl.key` and `ssl.crt` under `/etc/nginx/ssl_cert` and look for `.htpasswd` under `/etc/nginx/htpasswd`
 
 This is not friendly at the moment, it will crash hard if you don't run it correctly
 
